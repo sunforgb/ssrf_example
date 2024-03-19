@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  srv-1:
+    build:
+      context: ./srv-1/
+    ports:
+      - 80:8000
+    volumes:
+      - ./srv-1:/backend
